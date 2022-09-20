@@ -9,14 +9,14 @@
   padding: 0rem 1.25rem;
   gap: 0 5.5rem;
 }
-.text-content {
+.intro-text-content {
   align-self: end;
   padding-bottom: 12.5rem;
 }
-.text-content h1 {
+.intro-text-content h1 {
   margin-bottom: 2rem;
 }
-.text-content p {
+.intro-text-content p {
   margin-bottom: 1.25rem;
 }
 .ponto {
@@ -34,6 +34,7 @@
 }
 .img-intro img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
   border-radius: 4px;
 }
@@ -44,14 +45,14 @@
   .intro-conteiner {
     padding-top: 2.5rem;
   }
-  .text-content {
+  .intro-text-content {
     padding-bottom: 10rem;
   }
-  .text-content h1 {
+  .intro-text-content h1 {
     font-size: 3rem;
     line-height: 3rem;
   }
-  .text-content p {
+  .intro-text-content p {
     font-size: 2rem;
     max-width: 31.25rem;
   }
@@ -66,16 +67,16 @@
     gap: 1rem;
     padding-top: 2.5rem;
   }
-  .text-content {
+  .intro-text-content {
     padding-bottom: 0rem;
     justify-self: center;
     text-align: center;
   }
-  .text-content h1 {
+  .intro-text-content h1 {
     font-size: 2rem;
     line-height: 2rem;
   }
-  .text-content p {
+  .intro-text-content p {
     font-size: 1rem;
     line-height: 1rem;
   }
