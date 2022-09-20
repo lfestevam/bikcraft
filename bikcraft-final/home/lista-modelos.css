@@ -1,0 +1,90 @@
+/*MODELOS*/
+.modelos-conteiner {
+  padding: 7.5rem 1.25rem 7.5rem 1.25rem;
+}
+.titulo-modelos {
+  padding-bottom: 2.5rem;
+}
+.lista-bikes {
+  display: flex;
+  gap: 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.lista-bikes img {
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.lista-bikes a {
+  display: block;
+}
+.nome-bikes {
+  position: relative;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.nome-bikes::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  position: absolute;
+  background-color: #ffbb00;
+  left: -20px;
+  top: 6px;
+}
+.preço-lista {
+  margin-top: 8px;
+  margin-left: 20px;
+}
+@media (max-width: 1000px) {
+  .lista-bikes {
+    overflow-x: scroll;
+    gap: 1.5rem;
+  }
+  .titulo-modelos {
+    font-size: 2.5rem;
+    padding: 0;
+  }
+  .modelos-conteiner {
+    padding: 4rem 1.25rem 4rem 1.25rem;
+  }
+  .lista-bikes img {
+    margin-bottom: 0;
+    min-width: 150px;
+  }
+}
+@media (max-width: 560px) {
+  .lista-bikes {
+    overflow-x: scroll;
+    gap: 1.5rem;
+  }
+  .titulo-modelos {
+    font-size: 2rem;
+    padding: 0;
+    line-height: 1.8rem;
+    padding-bottom: 1rem;
+  }
+  .modelos-conteiner {
+    padding: 2rem 1.25rem 2rem 1.25rem;
+  }
+  .lista-bikes h3 {
+    font-size: 1rem;
+  }
+  .nome-bikes {
+    margin: 0;
+  }
+  .nome-bikes::before {
+    display: none;
+  }
+  .lista-bikes img {
+    margin-bottom: 0;
+    min-width: 150px;
+  }
+  .preço-lista {
+    margin-top: 8px;
+    margin-left: 0;
+    font-size: 0.8rem;
+  }
+}
