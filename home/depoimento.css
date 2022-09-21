@@ -1,0 +1,72 @@
+.depoimento {
+  background-color: #ffbb00;
+}
+.depoimento-conteiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.img-depoimento img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.depoimento-texto {
+  padding: 40px 40px 80px 80px;
+  align-self: end;
+}
+.citacao p {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 48px;
+  max-width: 32ch;
+  position: relative;
+}
+.citacao p::after {
+  content: "”";
+  font-size: 4rem;
+  color: #e4a30b;
+  position: absolute;
+  bottom: -10px;
+}
+.citacao p::before {
+  content: "“";
+  font-size: 4rem;
+  color: #e4a30b;
+  position: absolute;
+  top: 0px;
+  left: -45px;
+}
+.autor {
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+}
+@media (max-width: 800px) {
+  .depoimento-conteiner {
+    grid-template-columns: 1fr;
+  }
+  .img-depoimento img {
+    max-height: 400px;
+  }
+}
+@media (max-width: 600px) {
+  .img-depoimento img {
+    max-height: 300px;
+  }
+  .citacao p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .citacao p::before {
+    font-size: 2rem;
+    left: -25px;
+  }
+  .citacao p::after {
+    font-size: 2rem;
+  }
+  .citacao > span {
+    font-size: 1rem;
+  }
+}

@@ -14,7 +14,10 @@ a {
 img {
   max-width: 100%;
 }
-
+blockquote {
+  margin: 0;
+  padding: 0;
+}
 /*UTILITARIOS*/
 /*CORES*/
 
