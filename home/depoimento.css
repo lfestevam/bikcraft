@@ -18,7 +18,7 @@
   font-family: "Merriweather", serif;
   font-weight: 900;
   font-style: italic;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 48px;
   max-width: 32ch;
   position: relative;
@@ -42,6 +42,8 @@
   font-size: 24px;
   font-weight: 600;
   font-style: normal;
+  padding-top: 10px;
+  display: inline-block;
 }
 @media (max-width: 800px) {
   .depoimento-conteiner {
@@ -68,5 +70,8 @@
   }
   .citacao > span {
     font-size: 1rem;
+  }
+  .depoimento-texto {
+    padding: 40px 2rem 40px 2rem;
   }
 }
