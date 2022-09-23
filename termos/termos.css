@@ -1,0 +1,31 @@
+/*Titulo*/
+.conteiner-termos {
+  padding: 3.75rem 1.25rem;
+}
+.titulo-page p {
+  font: 500 24px/32px "Roboto", sans-serif;
+  margin-bottom: 8px;
+}
+/*corpo*/
+.conteiner-lista {
+  padding: 7.5rem 1.25rem;
+}
+.lista-termos li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.conteiner-lista ul {
+  margin-bottom: 32px;
+}
+/*reponsivo*/
+@media (max-width: 400px) {
+  .titulo-page p {
+    font-size: 16px;
+  }
+  .titulo-page h1 {
+    font-size: 2rem;
+    line-height: normal;
+  }
+  .conteiner-lista {
+    padding: 3.75rem 1.25rem;
+  }
+}

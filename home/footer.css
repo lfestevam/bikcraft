@@ -32,8 +32,6 @@
   display: grid;
   grid-template-columns: repeat(3, 40px);
   justify-items: center;
-  width: max-content;
-  gap: 32px;
 }
 .informacoes h3 {
   margin-bottom: 32px;
@@ -55,7 +53,7 @@
     text-align: center;
   }
   .social {
-    justify-items: center;
+    justify-content: center;
     gap: 10px;
   }
 }

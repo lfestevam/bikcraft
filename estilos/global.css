@@ -149,6 +149,9 @@ blockquote {
 .font-1-xs {
   font: 400 0.875rem/1.25rem "Roboto", sans-serif;
 }
+.font-1-l {
+  font: 400 24px/36px "Poppins", sans-serif;
+}
 /*Conteiner tamanho*/
 .conteiner-base {
   max-width: 75rem;
