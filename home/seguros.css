@@ -2,6 +2,9 @@
   background-color: #111111;
   padding: 3.75rem 1.25rem;
 }
+#seguros .seguros {
+  padding-top: 0;
+}
 .conteiner-seguros {
   display: grid;
   grid-template-columns: 1fr 1fr;

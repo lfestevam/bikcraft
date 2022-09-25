@@ -58,13 +58,10 @@
   transition: 0.3s ease-in-out;
 }
 .link-bike a:hover {
-  width: 110%;
-}
-.link-bike a:hover img {
-  width: 15%;
+  background: linear-gradient(#ffb60d, #e59317);
 }
 .magic-might {
-  box-shadow: inset 23rem 0rem #ffffff;
+  background: linear-gradient(to right, #ffffff 25%, #111111 25%);
 }
 .preco {
   padding: 8px 16px;
@@ -87,7 +84,7 @@
     grid-template-columns: 1fr;
   }
   .magic-might {
-    box-shadow: inset 0rem 7rem #ffffff;
+    background: #111111;
   }
 }
 @media (max-width: 460px) {
