@@ -2,7 +2,7 @@
   background: linear-gradient(#111111 650px, #f7f7f7 0px);
 }
 .conteiner-contatos {
-  padding: 4rem 1.25rem 4rem 1.25rem;
+  padding: 4rem 1.25rem 0rem 1.25rem;
 }
 .contato-grid {
   display: grid;
@@ -59,19 +59,20 @@
 .btn-enviar {
   background: linear-gradient(#ffbf00, #f2a50c);
   border-radius: 5px;
-  padding: 1rem 2rem;
+  padding: 10px 15px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   display: inline-block;
   border: none;
   cursor: pointer;
-  width: max-content;
+  width: 100%;
 }
 .btn-enviar:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .contato-grid {
     grid-template-columns: 1fr;
+    padding: 2rem 5px 0rem 5px;
   }
   .info-contatos,
   .formulario {
@@ -92,5 +93,76 @@
   }
   .btn-enviar {
     justify-self: center;
+    font-size: 14px;
+  }
+}
+
+/*lojas-endereço*/
+.lojas {
+  padding: 4rem 1.25rem 4rem 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+}
+.lojas h2 {
+  grid-column: 1 / -1;
+  margin-bottom: 60px;
+}
+.loja img {
+  border-radius: 4px 4px 0px 0px;
+}
+.loja-card {
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 2px rgb(0, 0, 0, 0.1);
+}
+.lojas-conteudos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 16px;
+  padding: 32px;
+}
+.lojas-conteudos h3,
+.atendimento {
+  grid-column: 1 /-1;
+}
+.lojas-dados {
+  display: grid;
+  gap: 8px;
+  border-left: 2px solid #ededed;
+  padding-left: 12px;
+}
+.atendimento {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+@media (max-width: 800px) {
+  .lojas {
+    grid-template-columns: 1fr;
+    gap: 20px 0px;
+    padding: 2rem 1.25rem 4rem 1.25rem;
+  }
+  .lojas h2 {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .lojas-conteudos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .lojas h2 {
+    font-size: 2rem;
+  }
+  .lojas-conteudos h3 {
+    font-size: 1.3rem;
+  }
+  .atendimento {
+    font-size: 15px;
+  }
+  .lojas-dados p {
+    font-size: 15px;
   }
 }
