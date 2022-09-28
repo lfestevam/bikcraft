@@ -7,7 +7,7 @@
 .orcamento {
   display: grid;
   grid-template-columns: 5fr 7fr;
-  padding: 0rem 1.25rem 0rem 1.25rem;
+  padding: 0rem 1.25rem 4rem 1.25rem;
 }
 .orcamento h2 {
   position: relative;
