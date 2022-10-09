@@ -15,6 +15,8 @@
   border-radius: 5px;
   margin-bottom: 1rem;
   transition: 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
 }
 .lista-bikes img:hover {
   transform: translateY(-2px);

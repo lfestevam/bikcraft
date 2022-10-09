@@ -23,6 +23,10 @@
 .imagens-bike img {
   flex: 1;
   min-width: 200px;
+  border-radius: 4px;
+}
+.imagens-bike img:nth-child(n + 2) {
+  cursor: pointer;
 }
 .imagens-bike img:first-child {
   min-width: 100%;
@@ -85,6 +89,9 @@
   }
   .info-bike {
     grid-template-columns: 1fr;
+  }
+  .imagens-bike img:nth-child(n + 2) {
+    cursor: auto;
   }
 }
 @media (max-width: 450px) {

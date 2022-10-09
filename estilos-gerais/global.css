@@ -13,8 +13,10 @@ a {
 }
 img {
   max-width: 100%;
+  height: auto;
 }
-blockquote {
+blockquote,
+dd {
   margin: 0;
   padding: 0;
 }

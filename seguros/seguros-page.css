@@ -8,6 +8,9 @@
 .titulo-seguro {
   margin-bottom: 92px;
 }
+.texto-perguntas p {
+  display: block;
+}
 
 /*vantagens*/
 .lista-cards {
@@ -42,37 +45,51 @@
 .titulo-perguntas {
   margin-bottom: 100px;
 }
-.cards-perguntas li:nth-child(odd) {
+.texto-perguntas:nth-child(odd) {
   background-color: #f7f7f7;
 }
-.cards-perguntas li {
-  padding: 20px 40px;
+.texto-perguntas {
+  padding: 20px;
+  border-radius: 4px;
+}
+.texto-perguntas dd {
+  padding-left: 20px;
+  padding-top: 16px;
+  max-width: 80ch;
+  display: none;
+}
+.texto-perguntas dd.ativa {
+  display: block;
+}
+.texto-perguntas button {
   display: grid;
-  grid-template-columns: 1fr auto;
-}
-.cards-perguntas li p {
-  max-width: 800px;
-}
-.cards-perguntas li h3 {
-  position: relative;
-  margin-bottom: 16px;
-}
-.cards-perguntas li img {
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
 }
-.cards-perguntas li img:hover {
-  transform: rotate(180deg);
-}
-.cards-perguntas li h3::before {
+.texto-perguntas button::before {
   content: "";
   display: inline-block;
   width: 12px;
   height: 8px;
-  position: absolute;
   background-color: #ffbb00;
-  left: -20px;
-  top: 7px;
+}
+.texto-perguntas button::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  background: url("../../img/icones/seta-abrir.svg");
+  transition: 0.3s;
+}
+.texto-perguntas button:hover::after,
+.texto-perguntas button[aria-expanded="true"]::after {
+  transform: rotate(180deg);
 }
 @media (max-width: 400px) {
   .titulo-perguntas {

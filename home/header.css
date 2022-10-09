@@ -33,6 +33,10 @@
 .header-links:hover::after {
   width: 80%;
 }
+.ativo::after{
+  width: 80%;
+}
+
 @media (max-width: 50rem) {
   .header-links {
     background-color: #111111;
@@ -46,5 +50,10 @@
   }
   .header-menu {
     gap: 1rem;
+  }
+}
+/*@media (max-width: 37.5rem) {
+  .header-menu {
+    display: none;
   }
 }

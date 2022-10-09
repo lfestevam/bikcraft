@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A Bikcraft é uma loja de bicicletas que está a mais de 10 anos no mercado vendendo diversos tipos de bicicletas para todos com um preço em conta, visamos ajudar as pessoas a se exercitarem, e manterem a boa saude.">
   <meta name="author" content="Luís Felipe Estevam">
-  <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" width="32" height="32">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" href="./estilos-gerais/style.css" as="style">
   <link rel="stylesheet" href="./estilos-gerais/style.css">
   <title>Bikcraft - Bicicletas Elétricas</title>
 </head>
@@ -18,13 +19,14 @@
 <body>
   <header class="header c12-b">
     <div class="header-conteiner conteiner-base">
-      <a href="./index.html"><img src="./img/bikcraft.svg" alt="bicicleta nimbus"></a>
+      <a href="./index.html"><img src="./img/bikcraft.svg" alt="logo marca" width="136" height="32"></a>
       <nav aria-label="primaria">
-        <ul class="header-menu">
-          <li><a href="./bicicletas/bicicletas.html" class="header-links w">Bicicletas</a></li>
-          <li><a href="./seguros/seguros-page.html" class="header-links w">Seguros</a></li>
-          <li><a href="./contato/contato.html" class="header-links w">Contato</a></li>
+        <ul class="header-menu" id="header-menu">
+          <li><a href="./bicicletas.html" class="header-links w">Bicicletas</a></li>
+          <li><a href="./seguros-page.html" class="header-links w">Seguros</a></li>
+          <li><a href="./contato.html" class="header-links w">Contato</a></li>
         </ul>
+        <img src="./img/" alt="">
       </nav>
     </div>
   </header>
@@ -32,13 +34,13 @@
     <article class="intro">
       <div class="intro-conteiner conteiner-base">
         <div class="intro-text-content">
-          <h1 class="w font-1-xxl">Bicicletas feitas
+          <h1 class="w font-1-xxl fadeInLeft" data-anime="200">Bicicletas feitas
             sob medidas<span class="ponto p1">.</span></h1>
-          <p class="font-2-l c5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
-          <a href="./bicicletas/bicicletas.html" class="btn-bicicletas p5 font-1-m-b">SELECIONE A SUA</a>
+          <p class="font-2-l c5 fadeInLeft" data-anime="400">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
+          <a href="./bicicletas.html" class="btn-bicicletas p5 font-1-m-b fadeInLeft" data-anime="400">SELECIONE A SUA</a>
         </div>
         <div class="img-intro">
-          <img src="./img/bicicletas/nimbus-home.jpg" alt="bicileta nimbus eletrica">
+          <img src="./img/bicicletas/nimbus-home.jpg" alt="bicileta preta nimbus" data-anime="600" width="920" height="1040" class="fadeInRight">
         </div>
       </div>
     </article>
@@ -48,21 +50,21 @@
         <ul class="lista-bikes">
           <li>
             <a href="./bicicletas/magic.html" class="c12">
-              <img src="./img/bicicletas/magic-home.jpg" alt="">
+              <img src="./img/bicicletas/magic-home.jpg" alt="bicicleta preta magic" width="410" height="410">
               <h3 class="nome-bikes">Magic Might</h3>
               <span class="preço-lista c8 font-2-m">R$2499</span>
             </a>
           </li>
           <li>
             <a href="./bicicletas/nebular.html" class="c12">
-              <img src="./img/bicicletas/nebula-home.jpg" alt="">
+              <img src="./img/bicicletas/nebula-home.jpg" alt="bicicleta branca nebular" width="410" height="410">
               <h3 class="nome-bikes">Nebular Cosmic</h3>
               <span class="preço-lista c8 font-2-m">R$3999</span>
             </a>
           </li>
           <li>
             <a href="./bicicletas/nimbus.html" class="c12">
-              <img src="./img/bicicletas/nimbus-home.jpg" alt="">
+              <img src="./img/bicicletas/nimbus-home.jpg" alt="bicicleta preta nimbus" width="410" height="410">
               <h3 class="nome-bikes">Nimbus Stark</h3>
               <span class="preço-lista c8 font-2-m">R$4999</span>
             </a>
@@ -77,43 +79,43 @@
             <span class="c5 font-2-l-b">TECNOLOGIA AVANÇADA</span>
             <h2 class="font-1-xxl w">você escolhe as suas cores e componentes<span class="ponto p1">.</span></h2>
             <p class="c5 font-2-l">Cada Bikcraft é um e possui a sua identidade.<br>As medidas serão exatas para o seu corpo e altura, garantindo maior confroto e ergonomia na sua pedalada. Você pode também personalizar completamente suas cores</p>
-            <a href="./bicicletas/bicicletas.html" class="link p1">ESCOLHA UM MODELO</a>
+            <a href="./bicicletas.html" class="link p1">ESCOLHA UM MODELO</a>
           </div>
           <div class="tec-vantagens">
             <div class="coluna">
-              <img src="./img/icones/eletrica.svg" alt="motor-eletrico">
+              <img src="./img/icones/eletrica.svg" alt="motor-eletrico" width="24" height="24">
               <h3 class="font-1-m w">Motor Elétrico</h3>
               <p class="c5 font-2-s">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com sua energia gasta ao pedalar.</p>
             </div>
             <div class="coluna">
-              <img src="./img/icones/rastreador.svg" alt="rastreador">
+              <img src="./img/icones/rastreador.svg" alt="rastreador" width="24" height="24">
               <h3 class="font-1-m w">Rastreador</h3>
               <p class="c5 font-2-s">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.</p>
             </div>
           </div>
         </div>
         <div class="imagem-tec">
-          <img src="./img/fotos/tecnologia.jpg" alt="ferramentas-img">
+          <img src="./img/fotos/tecnologia.jpg" alt="foto de ferramentas" width="1200" height="1920">
         </div>
       </div>
     </section>
     <section class="parceiros conteiner-base" aria-label="nossos parceiros">
       <h2 class="font-1-xxl c12">nossos parceiros<span class="ponto p1">.</span></h2>
       <ul class="lista-parceiros">
-        <li><img src="./img/parceiros/caravan.svg" alt="caravan"></li>
-        <li><img src="./img/parceiros/ranek.svg" alt="ranek"></li>
-        <li><img src="./img/parceiros/handel.svg" alt="handel"></li>
-        <li><img src="./img/parceiros/dogs.svg" alt="dogs"></li>
-        <li><img src="./img/parceiros/lescone.svg" alt="lescone"></li>
-        <li><img src="./img/parceiros/flexblog.svg" alt="flexblog"></li>
-        <li><img src="./img/parceiros/wildbeast.svg" alt="wildbeast"></li>
-        <li><img src="./img/parceiros/surfbot.svg" alt="surfbot"></li>
+        <li><img src="./img/parceiros/caravan.svg" alt="caravan" width="140" height="38"></li>
+        <li><img src="./img/parceiros/ranek.svg" alt="ranek" width="149" height="36"></li>
+        <li><img src="./img/parceiros/handel.svg" alt="handel" width="139" height="50"></li>
+        <li><img src="./img/parceiros/dogs.svg" alt="dogs" width="152" height="39"></li>
+        <li><img src="./img/parceiros/lescone.svg" alt="lescone" width="208" height="41"></li>
+        <li><img src="./img/parceiros/flexblog.svg" alt="flexblog" width="165" height="38"></li>
+        <li><img src="./img/parceiros/wildbeast.svg" alt="wildbeast" width="196" height="34"></li>
+        <li><img src="./img/parceiros/surfbot.svg" alt="surfbot" width="200" height="49"></li>
       </ul>
     </section>
     <section class="depoimento" aria-label="depoimento">
       <div class="depoimento-conteiner">
         <div class="img-depoimento">
-          <img src="./img/fotos/depoimento.jpg" alt="mulher andando de bicicleta">
+          <img src="./img/fotos/depoimento.jpg" alt="mulher andando de bicicleta" width="1500" height="1360">
         </div>
         <div class="depoimento-texto">
           <blockquote cite="Ana Júlia" class="citacao p5">
@@ -130,45 +132,45 @@
           <h3 class="font-1-p c6">PRATA</h3>
           <span class="font-1-xl w">R$ 199<span class="font-1-xs c6">mensal</span></span>
           <ul class="lista-vantagens">
-            <li class="font-2-m w"><img src="./img/icones/lista.svg" alt="">
+            <li class="font-2-m w fadeInLeft" data-anime="200"><img src="./img/icones/lista.svg" alt="" width="13" height="9">
               <p>Duas trocas por ano</p>
             </li>
-            <li class="font-2-m w"><img src="./img/icones/lista.svg" alt="">
+            <li class="font-2-m w fadeInLeft" data-anime="200"><img src="./img/icones/lista.svg" alt="" width="13" height="9">
               <p>Assistência técnica</p>
             </li>
-            <li class="font-2-m w"><img src="./img/icones/lista.svg" alt="">
+            <li class="font-2-m w fadeInLeft" data-anime="200"><img src="./img/icones/lista.svg" alt="" width="13" height="9">
               <p>Suporte 08h às 18h</p>
             </li>
-            <li class="font-2-m w"><img src="./img/icones/lista.svg" alt="">
+            <li class="font-2-m w fadeInLeft" data-anime="200"><img src="./img/icones/lista.svg" alt="" width="13" height="9">
               <p>Cobertura estadual</p>
             </li>
           </ul>
-          <a href="./seguros/seguros-page.html" class="c10-b w">INSCREVA-SE</a>
+          <a href="./seguros-page.html" class="c10-b w">INSCREVA-SE</a>
         </div>
         <div class="card c12-b">
           <h3 class="font-1-p p1">OURO</h3>
           <span class="font-1-xl w">R$ 299<span class="font-1-xs c6">mensal</span></span>
           <ul class="lista-vantagens">
-            <li class="font-2-m w"><img src="./img/icones/lista.svg" alt="">
+            <li class="font-2-m w fadeInLeft" data-anime="200"><img src="./img/icones/lista.svg" alt="" width="13" height="9">
               <p>Cinco trocas por ano</p>
             </li>
-            <li class="font-2-m w"><img src="./img/icones/lista.svg" alt="">
+            <li class="font-2-m w fadeInLeft" data-anime="200"><img src="./img/icones/lista.svg" alt="" width="13" height="9">
               <p>Assistência especial</p>
             </li>
-            <li class="font-2-m w"><img src="./img/icones/lista.svg" alt="">
+            <li class="font-2-m w fadeInLeft" data-anime="200"><img src="./img/icones/lista.svg" alt="" width="13" height="9">
               <p>Suporte 24h</p>
             </li>
-            <li class="font-2-m w"><img src="./img/icones/lista.svg" alt="">
+            <li class="font-2-m w fadeInLeft" data-anime="200"><img src="./img/icones/lista.svg" alt="" width="13" height="9">
               <p>Cobertura nacional</p>
             </li>
-            <li class="font-2-m w"><img src="./img/icones/lista.svg" alt="">
+            <li class="font-2-m w fadeInLeft" data-anime="200"><img src="./img/icones/lista.svg" alt="" width="13" height="9">
               <p>Desconto em parceiros</p>
             </li>
-            <li class="font-2-m w"><img src="./img/icones/lista.svg" alt="">
+            <li class="font-2-m w fadeInLeft" data-anime="200"><img src="./img/icones/lista.svg" alt="" width="13" height="9">
               <p>Acesso ao Clube Bikcraft</p>
             </li>
           </ul>
-          <a href="./seguros/seguros-page.html" class="ouro c12">INSCREVA-SE</a>
+          <a href="./seguros-page.html" class="ouro c12">INSCREVA-SE</a>
         </div>
       </div>
     </section>
@@ -176,7 +178,7 @@
   <footer class="footer">
     <div class="conteiner-footer conteiner-base">
       <div class="titulo-footer">
-        <a href="./index.html"><img src="./img/bikcraft.svg" alt="bicicleta nimbus"></a>
+        <a href="./index.html"><img src="./img/bikcraft.svg" alt="bicicleta nimbus" width="136" height="32"></a>
       </div>
       <div class="contatos w">
         <h3 class="font-2-l-b">CONTATO</h3>
@@ -189,18 +191,18 @@
           <p>Rio de Janeiro - RJ</p>
         </div>
         <div class="social">
-          <a href="#" title="instagram"><img src="./img/redes/instagram.svg" alt=""></a>
-          <a href="#" title="facebook"><img src="./img/redes/facebook.svg" alt=""></a>
-          <a href="#" title="youtube"><img src="./img/redes/youtube.svg" alt=""></a>
+          <a href="#" title="instagram"><img src="./img/redes/instagram.svg" alt="" width="32" height="32"></a>
+          <a href="#" title="facebook"><img src="./img/redes/facebook.svg" alt="" width="32" height="32"></a>
+          <a href="#" title="youtube"><img src="./img/redes/youtube.svg" alt="" width="32" height="32"></a>
         </div>
       </div>
       <div class="informacoes">
         <h3 class="w font-2-l-b">INFORMAÇÕES</h3>
         <ul>
-          <li><a href="./bicicletas/bicicletas.html" class="c5 font-2-m">Bicicletas</a></li>
-          <li><a href="./seguros/seguros-page.html" class="c5 font-2-m">Seguros</a></li>
-          <li><a href="./contato/contato.html" class="c5 font-2-m">Contato</a></li>
-          <li><a href="./termos/termos.html" class="c5 font-2-m">Termos e Condições</a></li>
+          <li><a href="./bicicletas.html" class="c5 font-2-m">Bicicletas</a></li>
+          <li><a href="./seguros-page.html" class="c5 font-2-m">Seguros</a></li>
+          <li><a href="./contato.html" class="c5 font-2-m">Contato</a></li>
+          <li><a href="./termos.html" class="c5 font-2-m">Termos e Condições</a></li>
         </ul>
       </div>
       <div class="copyrigth">
@@ -208,6 +210,8 @@
       </div>
     </div>
   </footer>
+  <script src="./script/plugins/plugins.js"></script>
+  <script src="./script/script.js"></script>
 </body>
 
 </html>
